@@ -1,0 +1,75 @@
+Post
+
+curl --location 'http://localhost:3000/product' \
+--header 'Content-Type: application/json' \
+--data '{
+
+    "nome_do_produto" : "Coca Cola",
+    "fornecedor": "Spal",
+    "endereco_fornecedor" : "iooiuio",
+    "quantidade": "1",
+    "data_registro" : "10/10/1990",
+    "data_update" : "10/10/1985"
+
+}
+'
+
+
+
+
+curl --location 'http://localhost:3000/product' \
+--header 'Content-Type: application/json' \
+--data '{
+
+    "nome_do_produto" : "ioiioiyu",
+    "fornecedor": "oiuouuo",
+    "endereco_fornecedor" : "iooiuio",
+    "quantidade": "1",
+    "data_registro" : "10/10/1990",
+    "data_update" : "10/10/1985"
+
+}
+'
+
+
+
+
+
+
+
+
+
+
+
+
+get
+curl --location 'http://localhost:3000/product'
+
+
+
+
+
+put
+
+curl --location --request PUT 'http://localhost:3000/product/1' \
+--header 'Content-Type: application/json' \
+--data '{
+    "nome_do_produto" : "Guarana",
+    "fornecedor": "oiuoui",
+    "endereco_fornecedor" : "iooiuio",
+    "quantidade": "1",
+    "data_registro" : "10/10/1990",
+    "data_update" : "10/10/1985"
+
+}'
+
+
+
+
+
+
+
+
+delete
+
+curl --location --request DELETE 'http://localhost:3000/product/2'
